@@ -22,10 +22,10 @@ var article = {
     
 };
    articlesecond:{
-    title;'Article-second|smita nadkarni',
-    heading;'Article-second',
-    date;'august 26,2017',
-    content;` <p>
+    title:'Article-second|smita nadkarni',
+    heading:'Article-second',
+    date:'august 26,2017',
+    content:` <p>
                 This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
             </p>
             <p>
