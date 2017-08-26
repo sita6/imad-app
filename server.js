@@ -21,35 +21,7 @@ var article = {
             </p>`
     
 }
-   ' article-second':  {
-    title:'Article-second|smita nadkarni',
-    heading:'Article-second',
-    date:'august 26,2017',
-    content:` <p>
-                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-            </p>
-            <p>
-                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-            </p>
-            <p>
-                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-            </p>`
-   };
-    
-   ' article-third':{title:'Article-third|smita nadkarni',
-        heading:'Article-third',
-        date:'august 26,2017',
-        content:` <p>
-                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-                </p>
-                <p>
-                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-                </p>
-                <p>
-                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
-                </p>`
-    
-};
+   
 };
 function createTemplate(data){
     var title=data.title;
@@ -94,12 +66,13 @@ app.get('/:articleName',function(req,res){
     var articleName=req.params.articleName;
     res.send(createTemplate(article[articleName]));
 });
-app.get('/article-second',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-second.html'));
 
-});
+
+
 app.get('/article-third',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-third.html'));
+   
+    
 
 });
 app.get('/ui/style.css', function (req, res) {
