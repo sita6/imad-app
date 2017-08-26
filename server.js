@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone= {
+var article = {
+   articleone: {
     title:'Article-one|smita nadkarni',
     heading:'Article-one',
     date:'august 26,2017',
@@ -20,11 +21,40 @@ var articleone= {
             </p>`
     
 };
+   articlesecond:{
+    title;'Article-second|smita nadkarni',
+    heading;'Article-second',
+    date;'august 26,2017',
+    content;` <p>
+                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+            </p>
+            <p>
+                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+            </p>
+            <p>
+                This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+            </p>`
+    };
+    articlethird={title:'Article-third|smita nadkarni',
+        heading:'Article-third',
+        date:'august 26,2017',
+        content:` <p>
+                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+                </p>
+                <p>
+                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+                </p>
+                <p>
+                    This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
+                </p>`
+    
+};
 function createTemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
+    
 
 var htmltemplate=`
             <html>
