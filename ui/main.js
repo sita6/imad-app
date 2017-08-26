@@ -4,7 +4,12 @@ var element=document.getElementById("main-text");
 element.innerHTML="smita is great";
 //write a code to change the image
 var img=document.getElementById("mandi");
+function moveRight(){
+    marginRight=marginRight+10;
+    img.style.marginRight=marginRight+'px';
+    
+}
 img.onclick=function(){
-    img.style.marginLeft='100px';
+    var interval=setInterval(moveRight,100);
     
     };
