@@ -68,7 +68,6 @@ app.get('/:articleName',function(req,res){
 });
 
 
-
 app.get('/article-third',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-third.html'));
    
