@@ -21,7 +21,7 @@ var article = {
             </p>`
     
 };
-   'article-second':{
+   'article-second';{
     title:'Article-second|smita nadkarni',
     heading:'Article-second',
     date:'august 26,2017',
