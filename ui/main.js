@@ -4,7 +4,7 @@ var element=document.getElementById("main-text");
 element.innerHTML="smita is great";
 //write a code to change the image
 var img=document.getElementById("mandi");
-var marfinLeft=0;
+var marginLeft=0;
 function moveRight(){
     marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
