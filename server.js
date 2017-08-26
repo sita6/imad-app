@@ -20,7 +20,7 @@ var article = {
                 This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.This content is about article-one which i have been specified in this paragraph.
             </p>`
     
-};
+}
    ' article-second':  {
     title:'Article-second|smita nadkarni',
     heading:'Article-second',
