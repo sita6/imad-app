@@ -17,7 +17,7 @@ request.onreadystatechange=function(){
     
 };
 //make a request
-request.open('GET','http://http://smitan.imad.hasura-app.io/',true);
+request.open('GET','http://http://smitan.imad.hasura-app.io/counter',true);
 request.send(null);
 };
 
